@@ -26,7 +26,6 @@ async def request(url: str):
 async def get_exchange(date: str, currency: str):
     try:
         result = await request(URL + date)
-        print(result)
         if result and "exchangeRate" in result:
             usd_rate = None
             eur_rate = None
@@ -59,6 +58,10 @@ async def main():
             days = int(sys.argv[1])
         except TypeError:
             print("Give me number of days and currency(optional)")
+            
+        if days > 10:
+            days = 10
+
         dates = [datetime.now().date() - timedelta(days=i) for i in range(days)]
         formatted_dates = [date.strftime("%d.%m.%Y") for date in dates]
 
