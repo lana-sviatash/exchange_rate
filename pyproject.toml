@@ -9,6 +9,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 aiohttp = "^3.8.5"
+asyncio = "^3.4.3"
+websockets = "^11.0.3"
+logging = "^0.4.9.6"
+names = "^0.3.0"
 
 
 [build-system]
