@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "exchange-rate"
+version = "0.1.0"
+description = ""
+authors = ["lana-sviatash <128919364+lana-sviatash@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
